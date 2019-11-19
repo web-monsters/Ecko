@@ -1,0 +1,29 @@
+{
+  "name": "kek",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-monsters/Mercury.git"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "Mir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-monsters/Mercury/issues"
+  },
+  "homepage": "https://github.com/web-monsters/Mercury#readme"
+}
