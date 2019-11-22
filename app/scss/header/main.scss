@@ -6,28 +6,32 @@
   .flex-container {
     height: 100%;
   }
-}
 
-.header__navigation {
-  flex-grow: 1;
-}
-.header__navigation-list {
-  .item {
-    margin-right: 29px;
+  .header__navigation {
+    flex-grow: 1;
+  }
+  .header__navigation-list {
+    .item {
+      margin-right: 29px;
 
-    .item__link {
-      padding-bottom: 15px;
-      font-family: $linkFont;
-      font-size: 21px;
-      line-height: 25px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #fff;
+      .item__link {
+        padding-bottom: 15px;
 
-      &:hover {
-        border-bottom: 2px solid #fefe41;
-        transition: 0.1s;
+        font-family: $linkFont;
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 2px solid linear-gradient(to right, #32b5ff, #ffd900);
+          border-color: linear-gradient(to right, #32b5ff, #ffd900);
+          transition: 0.1s;
+        }
       }
     }
   }
 }
+
+@import "media.scss";

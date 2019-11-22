@@ -1,18 +1,18 @@
 .intro {
-  height: 914px;
   position: relative;
+  height: 914px;
+
   .intro__background {
     display: flex;
-
-    .intro__background-img {
-      flex-basis: 50%;
-      width: 100%;
-    }
+    width: 100%;
+    flex-basis: 50%;
+    justify-content: center;
   }
+  
   .intro__circle-container {
     position: absolute;
     top: 200px;
-    left: 33%;
+    left: calc(50% - 250px);
 
     .intro__circle {
       position: relative;
