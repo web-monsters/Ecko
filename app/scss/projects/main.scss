@@ -1,0 +1,96 @@
+.projects {
+  position: relative;
+  height: 1100px;
+  background: url("../assets/img/projects/projects-bg.png") 100% 150px no-repeat;
+
+  .projects__title {
+    position: relative;
+    padding-top: 150px;
+    padding-left: 60px;
+    font-family: $titleFont;
+    font-size: 55px;
+    line-height: 65px;
+    color: $mainColor;
+    z-index: 10;
+  }
+
+  .projects__title-bg {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .projects__list {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      .item__img,
+      .item__text {
+        width: 380px;
+        height: 263px;
+      }
+
+      .item__text {
+        margin-top: -3px;
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #cfcdcd;
+
+        .item__title {
+          margin-bottom: 20px;
+          font-size: 24px;
+          color: #4b4b4b;
+        }
+
+        .item__description,
+        .item__theme {
+          font-family: $descriptionFont;
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        .item__description {
+          color: #4b4b4b;
+          border-bottom: 1px solid #cfcdcd;
+          padding-bottom: 15px;
+        }
+
+        .item__theme {
+          margin-top: 15px;
+          display: inline-block;
+          font-size: 20px;
+          color: #afafaf;
+        }
+      }
+    }
+  }
+
+  .projects__all {
+    margin-top: 110px;
+    text-align: center;
+    .projects__to-all {
+      display: inline;
+      padding: 15px 45px;
+      font-family: $buttonFont;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      background-color: #2e8eff;
+      border: none;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      transition: 0.2s;
+
+      &:hover {
+        padding: 13px 43px;
+        color: #2e8eff;
+        background-color: #fff;
+        border: 2px solid #2e8eff;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
