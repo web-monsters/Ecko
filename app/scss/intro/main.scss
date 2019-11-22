@@ -1,5 +1,119 @@
 .intro {
-  font-size: 5px;
+  height: 914px;
+  position: relative;
+  .intro__background {
+    display: flex;
+
+    .intro__background-img {
+      flex-basis: 50%;
+      width: 100%;
+    }
+  }
+  .intro__circle-container {
+    position: absolute;
+    top: 200px;
+    left: 33%;
+
+    .intro__circle {
+      position: relative;
+      text-align: center;
+      width: 512px;
+      height: 521px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 3px solid #1d85ff;
+      z-index: 10;
+
+      .intro__circle-img {
+        margin-top: 60px;
+      }
+
+      .intro__circle-title {
+        padding-top: 28px;
+        font-family: "ProximaNova-Black", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        color: #2e8eff;
+      }
+
+      .intro__circle-subtitle {
+        padding-top: 14px;
+        font-size: 21px;
+        font-weight: 500;
+        color: #454545;
+      }
+
+      .intro__circle-description {
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 70%;
+        font-size: 18px;
+        font-weight: 100;
+        color: #636363;
+      }
+    }
+
+    .intro__bullet-list {
+      position: absolute;
+      top: 30px;
+      right: -100px;
+      z-index: 1;
+
+      .item {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 400px;
+        height: 66px;
+        text-align: center;
+        background-color: #12a650;
+        border: 3px solid #fff;
+        border-radius: 40px;
+
+        &:hover {
+          right: -200px;
+          transition: 0.3s;
+        }
+
+        .item__link {
+          color: #fff;
+          text-decoration: none;
+          padding-right: 30px;
+        }
+        .item__icon {
+          .item__img {
+            display: inline;
+            padding-right: 30px;
+          }
+        }
+      }
+
+      .item--1 {
+        position: absolute;
+        top: 160px;
+        right: 30px;
+      }
+
+      .item--2 {
+        position: absolute;
+        top: 80px;
+        right: 50px;
+
+        &:hover {
+          right: -200px;
+          transition: 0.3s;
+        }
+      }
+
+      .item--3 {
+        position: absolute;
+        top: 0px;
+        right: 100px;
+      }
+    }
+  }
 }
 
 @import "media.scss";

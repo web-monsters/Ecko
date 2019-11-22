@@ -1,0 +1,48 @@
+.advantages {
+  margin-bottom: 50px;
+  background: url("../assets/img/advantages/advantages-bg.png") no-repeat;
+  background-position: right;
+
+  .advantages__title {
+    padding: 50px 40px 20px 30px;
+    font-family: $titleFont;
+    margin: 20px 0 50px;
+    font-size: 55px;
+    color: #2e8eff;
+    width: 70%;
+    background: url("../assets/img/advantages/title-bg.png") no-repeat;
+    background-position: -60px -10px;
+    overflow: visible;
+  }
+  .advantages-list {
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .item {
+      margin-right: 60px;
+      flex-basis: 20%;
+      margin-bottom: 60px;
+    }
+    .item__img {
+      margin-bottom: 30px;
+      background: #12a650;
+      width: 118px;
+      height: 118px;
+      border-radius: 50%;
+      border: 20px solid #12a650;
+    }
+  }
+
+  .advantages__to-shop {
+    padding: 15px 50px;
+    text-decoration: none;
+    font-family: $buttonFont;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2e8eff;
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px 3px rgba(0, 0, 0, 0.3);
+  }
+}
