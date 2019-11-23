@@ -24,9 +24,10 @@
         color: #fff;
         text-decoration: none;
 
+        transition: 0.2s;
+
         &:hover {
-          border-bottom: 2px solid linear-gradient(to right, #32b5ff, #ffd900);
-          border-color: linear-gradient(to right, #32b5ff, #ffd900);
+          border-bottom: 2px solid #fefe41;
           transition: 0.1s;
         }
       }

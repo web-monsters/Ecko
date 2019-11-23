@@ -30,7 +30,7 @@ $screen-lg: 1199px;
 
 //     ====  /   Media ====
 
-// === Shadows ===
+// === HOVER ===
 
 $shadow: 0px 0px 10px 8px
   rgba(
@@ -38,4 +38,5 @@ $shadow: 0px 0px 10px 8px
     $alpha: 0.1
   );
 
-// ===  / Shadows ===
+$borderBottom: 2px solid #fefe41;
+// ===  / HOVER ===
