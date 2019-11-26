@@ -7,6 +7,8 @@
     width: 100%;
     flex-basis: 50%;
     justify-content: center;
+
+    background: linear-gradient(#fff, #32b5ff);
   }
 
   .intro__circle-container {
@@ -35,6 +37,25 @@
         font-weight: 700;
         line-height: 44px;
         color: $mainColor;
+      }
+
+      .title__strip,
+      .title__strip--second {
+        position: absolute;
+        width: 100px;
+        height: 8px;
+        background-color: #fcff2e;
+        z-index: -1;
+      }
+
+      .title__strip {
+        top: 194px;
+        left: 50px;
+      }
+
+      .title__strip--second {
+        top: 194px;
+        left: 290px;
       }
 
       .intro__circle-subtitle {
