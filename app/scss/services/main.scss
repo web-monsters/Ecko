@@ -12,7 +12,7 @@
     font-family: $titleFont;
     font-size: 55px;
     line-height: 1;
-    color: #2e8eff;
+    color: $mainColor;
     z-index: 10;
   }
 
@@ -31,19 +31,19 @@
     .item {
       padding: 25px 70px;
       background-color: #fff;
-      border-top: 2px solid #2e8eff;
-      border-right: 2px solid #2e8eff;
-      border-bottom: 2px solid #2e8eff;
+      border-top: 2px solid $mainColor;
+      border-right: 2px solid $mainColor;
+      border-bottom: 2px solid $mainColor;
       box-shadow: $shadow;
       transition: 0.2s;
 
       &:first-child {
-        border-left: 2px solid #2e8eff;
+        border-left: 2px solid $mainColor;
       }
 
       &:hover {
-        background-color: #2e8eff;
-        box-shadow: inset 0px 0px 10px 6px rgba($color: #000000, $alpha: 0.3);
+        background-color: $mainColor;
+        box-shadow: $insetShadow;
 
         .item__title {
           color: #fff;
@@ -52,7 +52,7 @@
 
       .item__title {
         font-family: $linkFont;
-        color: #2e8eff;
+        color: $mainColor;
       }
     }
   }
@@ -84,25 +84,9 @@
     }
 
     .services__button {
-      display: block;
-      margin: 70px auto;
-      padding: 15px 45px;
-      font-family: $buttonFont;
-      font-size: 24px;
-      color: #fff;
-      background-color: #2e8eff;
-      border: none;
-      border-radius: 5px;
-      box-shadow: $shadow;
-      transition: 0.2s;
+      @include buttonMain;
 
-      &:hover {
-        padding: 13px 43px;
-        color: #2e8eff;
-        background-color: #fff;
-        border: 2px solid #2e8eff;
-        box-sizing: border-box;
-      }
+      margin: 70px auto;
     }
   }
 }

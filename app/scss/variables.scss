@@ -14,6 +14,7 @@ $descriptionFont: "ProximaNova-Regular", sans-serif;
 
 // === COLOR ===
 $mainColor: #2e8eff;
+$bgColor: #12a650;
 // ===  / COLOR ===
 
 //     ====       Media ====
@@ -38,5 +39,11 @@ $shadow: 0px 0px 10px 8px
     $alpha: 0.1
   );
 
+$insetShadow: inset 0px 0px 10px 6px
+  rgba(
+    $color: #000000,
+    $alpha: 0.3
+  );
 $borderBottom: 2px solid #fefe41;
+
 // ===  / HOVER ===

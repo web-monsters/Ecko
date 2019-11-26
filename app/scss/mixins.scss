@@ -5,3 +5,23 @@
 
 // @include flexContainer(row);
 
+@mixin buttonMain {
+  display: block;
+  padding: 15px 45px;
+  font-family: $buttonFont;
+  font-size: 24px;
+  color: #fff;
+  background-color: $mainColor;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $shadow;
+  transition: 0.2s;
+
+  &:hover {
+    padding: 13px 43px;
+    color: $mainColor;
+    background-color: #fff;
+    border: 2px solid $mainColor;
+    box-sizing: border-box;
+  }
+}

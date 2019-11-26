@@ -15,61 +15,10 @@
     z-index: 1;
   }
 
-  // .projects__list {
-  //   margin-top: 150px;
-  //   display: flex;
-  //   justify-content: space-between;
-
-  //   .item {
-  //     &:hover {
-  //       transition: 0.2s;
-  //       box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
-  //     }
-
-  //     .item__img,
-  //     .item__text {
-  //       width: 380px;
-  //       height: 263px;
-  //     }
-
-  //     .item__text {
-  //       margin-top: -3px;
-  //       padding: 30px;
-  //       background-color: #fff;
-  //       border: 1px solid #cfcdcd;
-
-  //       .item__title {
-  //         margin-bottom: 20px;
-  //         font-size: 24px;
-  //         color: #4b4b4b;
-  //       }
-
-  //       .item__description,
-  //       .item__theme {
-  //         font-family: $descriptionFont;
-  //         font-size: 20px;
-  //         line-height: 24px;
-  //       }
-
-  //       .item__description {
-  //         color: #4b4b4b;
-  //         border-bottom: 1px solid #cfcdcd;
-  //         padding-bottom: 15px;
-  //       }
-
-  //       .item__theme {
-  //         margin-top: 15px;
-  //         display: inline-block;
-  //         font-size: 20px;
-  //         color: #afafaf;
-  //       }
-  //     }
-  //   }
-  // }
-
   .projects__all {
     margin-top: 110px;
     text-align: center;
+
     .projects__to-all {
       display: inline;
       padding: 15px 45px;
@@ -77,7 +26,7 @@
       font-size: 24px;
       color: #fff;
       text-decoration: none;
-      background-color: #2e8eff;
+      background-color: $mainColor;
       border: none;
       border-radius: 5px;
       box-shadow: $shadow;
@@ -85,15 +34,11 @@
 
       &:hover {
         padding: 13px 43px;
-        color: #2e8eff;
+        color: $mainColor;
         background-color: #fff;
-        border: 2px solid #2e8eff;
+        border: 2px solid $mainColor;
         box-sizing: border-box;
       }
     }
   }
 }
-
-
-
-
