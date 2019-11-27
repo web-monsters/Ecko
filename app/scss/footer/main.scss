@@ -1,0 +1,99 @@
+.main__footer {
+  height: 325px;
+  background-color: $bgColor;
+
+  .flex-container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // === ЛОГОТИП & ПРАВА
+
+  .footer__logo_copyrights {
+    margin-top: 65px;
+    .footer__logo-img {
+      margin-bottom: 35px;
+    }
+
+    .footer__copyrights {
+      font-family: $descriptionFont;
+      font-size: 20px;
+      font-weight: 100;
+      color: #fff;
+    }
+  }
+  // ==== МЕНЮ    =====
+  .footer__nav {
+    margin-top: 40px;
+    width: 305px;
+    height: 230px;
+    align-items: center;
+
+    .footer__navigation-list {
+      .item {
+        margin-bottom: 40px;
+
+        .item__link {
+          padding-bottom: 5px;
+          font-family: $descriptionFont;
+          font-size: 18px;
+          color: #fff;
+          text-decoration: none;
+          transition: 0.2s;
+
+          &:hover {
+            font-family: $linkFont;
+            border-bottom: $borderBottom;
+          }
+        }
+      }
+    }
+  }
+  // === Обратная связь ===
+  .footer__feedback {
+    height: 280px;
+
+    .footer__feedback-title {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      font-family: $linkFont;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .footer__feedback-subtitle {
+      margin-bottom: 30px;
+      font-family: $descriptionFont;
+      font-size: 21px;
+      color: #fff;
+    }
+
+    .footer__feedback-input {
+      position: relative;
+      padding: 15px 25px;
+      width: 310px;
+      height: 53px;
+      font-family: $descriptionFont;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+
+      &::after {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        content: "";
+        background: url("../assets/img/socials/input-img.png");
+      }
+    }
+  }
+
+  .footer__social-list {
+    margin-top: 30px;
+    display: flex;
+
+    .item {
+      margin-right: 30px;
+    }
+  }
+}

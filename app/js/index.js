@@ -3,7 +3,7 @@
 let list = document.querySelector(".services__description-list");
 
 function renderContent(textTitle, textDescription) {
-  let content = document.querySelector(".item");
+  let content = document.querySelector("services__description-list.item");
   content.innerHTML = "";
 
   let mainContent = document.createElement("li");
@@ -24,10 +24,10 @@ function renderContent(textTitle, textDescription) {
 let buttons = Array.from(list.children);
 
 buttons.forEach((item, index, array) => {
-  item.addEventlistener("click", function(event) {
+  item.addEventListener("click", function(event) {
     buttons.forEach(item => item.classList.remove("active"));
 
-    event.target.classList.add("active");
+    event.target.classList.add("active"); 
 
     if (event.target.classList.contains("Investments")) {
       renderContent(

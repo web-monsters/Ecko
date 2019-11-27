@@ -1,0 +1,44 @@
+.projects {
+  position: relative;
+  height: 1100px;
+  background: url("../assets/img/projects/projects-bg.png") 100% 150px no-repeat;
+
+  .projects__title {
+    padding-top: 150px;
+    padding-left: 60px;
+  }
+
+  .projects__title-bg {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .projects__all {
+    margin-top: 110px;
+    text-align: center;
+
+    .projects__to-all {
+      display: inline;
+      padding: 15px 45px;
+      font-family: $buttonFont;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      background-color: $mainColor;
+      border: none;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      transition: 0.2s;
+
+      &:hover {
+        padding: 13px 43px;
+        color: $mainColor;
+        background-color: #fff;
+        border: 2px solid $mainColor;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

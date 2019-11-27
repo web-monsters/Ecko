@@ -7,8 +7,10 @@
     width: 100%;
     flex-basis: 50%;
     justify-content: center;
+
+    background: linear-gradient(#fff, #32b5ff);
   }
-  
+
   .intro__circle-container {
     position: absolute;
     top: 200px;
@@ -34,7 +36,26 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 44px;
-        color: #2e8eff;
+        color: $mainColor;
+      }
+
+      .title__strip,
+      .title__strip--second {
+        position: absolute;
+        width: 100px;
+        height: 8px;
+        background-color: #fcff2e;
+        z-index: -1;
+      }
+
+      .title__strip {
+        top: 194px;
+        left: 50px;
+      }
+
+      .title__strip--second {
+        top: 194px;
+        left: 290px;
       }
 
       .intro__circle-subtitle {
@@ -68,13 +89,13 @@
         width: 400px;
         height: 66px;
         text-align: center;
-        background-color: #12a650;
+        background-color: $bgColor;
         border: 3px solid #fff;
         border-radius: 40px;
+        transition: 0.3s;
 
         &:hover {
           right: -200px;
-          transition: 0.3s;
         }
 
         .item__link {
@@ -94,17 +115,16 @@
         position: absolute;
         top: 160px;
         right: 30px;
+
+        &:hover {
+          right: -300px;
+        }
       }
 
       .item--2 {
         position: absolute;
         top: 80px;
         right: 50px;
-
-        &:hover {
-          right: -200px;
-          transition: 0.3s;
-        }
       }
 
       .item--3 {
