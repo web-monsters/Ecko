@@ -9,7 +9,7 @@
 .main__header {
   @media (max-width: $screen-sm) {
     height: 500px;
-    
+
 
     .header__navigation {
       height: 100%;
@@ -20,6 +20,7 @@
     }
   }
 }
+
 .main__header {
   .header__navigation-list {
     @media (max-width: $screen-sm) {
