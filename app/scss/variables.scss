@@ -1,5 +1,41 @@
-$baseContainerWidth: 1400px;
+$baseContainerWidth: 1300px;
 $baseContainerPadding: 5px;
 
-$baseFont: "Roboto", sans-serif;
+// ===  FONT  ===
+
+$baseFont: "proxima-nova", sans-serif;
 $baseFontSize: 18px;
+$titleFont: "ProximaNova-Black", sans-serif;
+$linkFont: "ProximaNova-Bold", sans-serif;
+$buttonFont: "ProximaNova-semiBold", sans-serif;
+$descriptionFont: "ProximaNova-Regular", sans-serif;
+
+// === / FONT  ===
+
+
+
+//     ====       Media ==== 
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+// $screen-md: 991px;
+$screen-lg: 1199px;
+
+//     ====  /   Media ==== 
+
+
+
+// === Shadows ===
+
+$shadow: 0px 0px 10px 8px
+  rgba(
+    $color: #000000,
+    $alpha: 0.1
+  );
+
+// ===  / Shadows ===

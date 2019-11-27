@@ -1,0 +1,108 @@
+.services {
+  position: relative;
+  height: 1037px;
+  background: url("../assets/img/services/gear.png") no-repeat;
+  background-color: #f5f5f5;
+
+  .services__title {
+    position: relative;
+    margin-top: 80px;
+    padding-left: 700px;
+    margin-right: 0px;
+    font-family: $titleFont;
+    font-size: 55px;
+    line-height: 1;
+    color: #2e8eff;
+    z-index: 10;
+  }
+
+  .services__title-bg {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    z-index: 1;
+  }
+
+  .services-list {
+    margin: 150px auto 0;
+    display: flex;
+    justify-content: center;
+
+    .item {
+      padding: 25px 70px;
+      background-color: #fff;
+      border-top: 2px solid #2e8eff;
+      border-right: 2px solid #2e8eff;
+      border-bottom: 2px solid #2e8eff;
+      box-shadow: $shadow;
+      transition: 0.2s;
+
+      &:first-child {
+        border-left: 2px solid #2e8eff;
+      }
+
+      &:hover {
+        background-color: #2e8eff;
+        box-shadow: inset 0px 0px 10px 6px rgba($color: #000000, $alpha: 0.3);
+
+        .item__title {
+          color: #fff;
+        }
+      }
+
+      .item__title {
+        font-family: $linkFont;
+        color: #2e8eff;
+      }
+    }
+  }
+
+  .services__description {
+    margin-top: 100px;
+
+    .services__description-list {
+      display: flex;
+      justify-content: center;
+      .item {
+        margin-left: 40px;
+        max-width: 540px;
+        width: 100%;
+
+        .item__title {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+
+        .item__description {
+          font-family: $descriptionFont;
+          font-size: 20px;
+          font-weight: 100;
+          line-height: 36px;
+          color: #363636;
+        }
+      }
+    }
+
+    .services__button {
+      display: block;
+      margin: 70px auto;
+      padding: 15px 45px;
+      font-family: $buttonFont;
+      font-size: 24px;
+      color: #fff;
+      background-color: #2e8eff;
+      border: none;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      transition: 0.2s;
+
+      &:hover {
+        padding: 13px 43px;
+        color: #2e8eff;
+        background-color: #fff;
+        border: 2px solid #2e8eff;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

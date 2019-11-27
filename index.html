@@ -1,53 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="dist/main.css" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ecko</title>
   </head>
   <body>
     <div class="layout">
       <div class="main">
+        <!-- HEADER/ -->
+
         <header class="main__header">
-          <div class="flex-container ai-center jc-space-between">
-            <div class="header__logo flex-row ai-center jc-center">
-              <img src="" alt="" />
-              <span class="logo__title">Mercury</span>
+          <div class="flex-container jc-space-between ai-center">
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                <img
+                  class="header__logo-img"
+                  src="assets/img/header-logo.png"
+                />
+              </a>
             </div>
 
-            <nav class="header__nav">
-              <ul class="header__nav-list flex-row">
+            <nav class="header__navigation">
+              <ul class="header__navigation-list flex-row jc-center ai-center">
                 <li class="item">
-                  <a class="item__link" href="">Features</a>
+                  <a class="item__link" href="#">Главная</a>
                 </li>
 
                 <li class="item">
-                  <a class="item__link" href="">Pricing</a>
+                  <a class="item__link" href="#">Наши проекты</a>
                 </li>
 
                 <li class="item">
-                  <a class="item__link" href="">Blog</a>
+                  <a class="item__link" href="#">Партнеры</a>
                 </li>
 
                 <li class="item">
-                  <a class="item__link" href="">Contact</a>
+                  <a class="item__link" href="#">Новости</a>
+                </li>
+
+                <li class="item">
+                  <a class="item__link" href="#">Контакты</a>
                 </li>
               </ul>
-
-              <button class="header__login" type="button">Login</button>
             </nav>
+            <div class="header__language">
+              <select class="header__language-selection" name="language">
+                <option value="RU">RU</option>
+                <option value="EN">EN</option>
+                <option value="UA">UA</option>
+              </select>
+            </div>
           </div>
         </header>
 
+        <!-- / HEADER/ -->
+
         <main class="main__body">
-          <section class="intro"></section>
-          <section class="advantages"></section>
+          <!-- INTRO -->
+
+          <section class="intro">
+            <div class="intro__background">
+              <img
+                src="assets/img/intro-bg-left.jpg"
+                class="intro__background-img"
+              />
+              <img
+                src="assets/img/intro-bg-right.jpg"
+                class="intro__background-img"
+              />
+            </div>
+
+            <div class="intro__circle-container">
+              <div class="intro__circle">
+                <img
+                  class="intro__circle-img"
+                  src="assets/img/circle-logo.png"
+                />
+                <h1 class="intro__circle-title">
+                  Зменшіть ваші витрати на електроенергію
+                </h1>
+                <p class="intro__circle-subtitle">
+                  Экономное отопление
+                </p>
+
+                <p class="intro__circle-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <ul class="intro__bullet-list">
+                <li class="item item--1">
+                  <a href="" class="item__link">
+                    Безкоштовна вода
+                  </a>
+
+                  <span class="item__icon">
+                    <img src="assets/img/circle-water.png" class="item__img" />
+                  </span>
+                </li>
+
+                <li class="item item--2">
+                  <a href="" class="item__link ">
+                    Безкоштовне отоплення
+                  </a>
+
+                  <span class="item__icon">
+                    <img src="assets/img/circle-hot.png" class="item__img" />
+                  </span>
+                </li>
+
+                <li class="item item--3">
+                  <a href="" class="item__link">
+                    Вiчне життя
+                  </a>
+
+                  <span class="item__icon">
+                    <img src="assets/img/circle-water.png" class="item__img" />
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- /  INTRO -->
+
+          <!-- ADVANTAGES -->
+
+          <section class="advantages container">
+            <h3 class="advantages__title">
+              Переваги енергосервісу для бюджетних установ
+            </h3>
+            <ul class="advantages-list flex-container">
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-1.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Відсутність ризиків з боку бюджетних установ
+                </p>
+              </li>
+
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-2.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Розподіл досягнутої економії між ЕСКО та Замовником
+                </p>
+              </li>
+
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-3.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Обладнання у власності ЕСКО до завершення договору, по його
+                  завершенню — передача на баланс Замовника
+                </p>
+              </li>
+
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-4.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Можливість 100% фінансування проекту за рахунок ЕСКО КОМПАНІЇ
+                </p>
+              </li>
+
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-5.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Модернізація об’єкту без додаткових навантажень на бюджет
+                </p>
+              </li>
+
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-6.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Можливість дострокового завершення контракту у разі досягнення
+                  високих показників ефективності
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="assets/img/advantages/advantages-6.png"
+                  class="item__img"
+                />
+                <p class="item__description">
+                  Можливість дострокового завершення контракту у разі досягнення
+                  високих показників ефективності
+                </p>
+              </li>
+            </ul>
+
+            <a href="#" class="advantages__to-shop">В Магазин</a>
+          </section>
+
+          <!-- / ADVANTAGES -->
+
+          <!-- SERVICES -->
+
+          <section class="services">
+            <div class="flex-container">
+              <h3 class="services__title">
+                Послуги для Бізнесу
+              </h3>
+
+              <span class="services__title-bg">
+                <img src="assets/img/services/title-bg.png" alt="" />
+              </span>
+            </div>
+
+            <ul class="services-list">
+              <li class="item">
+                <p class="item__title">
+                  Инвестиции
+                </p>
+              </li>
+
+              <li class="item">
+                <p class="item__title">
+                  Энергосервис
+                </p>
+              </li>
+
+              <li class="item">
+                <p class="item__title">
+                  Энергоаудит
+                </p>
+              </li>
+
+              <li class="item">
+                <p class="item__title">
+                  Энергомониторинг
+                </p>
+              </li>
+            </ul>
+
+            <div class="services__description container">
+              <ul class="services__description-list">
+                <li class="item investments">
+                  <p class="item__title"></p>
+
+                  <p class="item__description"></p>
+                </li>
+
+                <li class="item  energy-service">
+                  <p class="item__title"></p>
+
+                  <p class="item__description"></p>
+                </li>
+                
+                <li class="item audit">
+                  <p class="item__title"></p>
+
+                  <p class="item__description"></p>
+                </li>
+
+                <li class="item">
+                  <p class="item__title"></p>
+
+                  <p class="item__description"></p>
+                </li>
+              </ul>
+
+              <button class="services__button" type="button">
+                Подать заявку
+              </button>
+            </div>
+          </section>
+
+          <!-- /  SERVICES -->
         </main>
       </div>
 
       <footer class="main__footer"></footer>
     </div>
+
+    <script src="app/js/index.js"></script>
   </body>
 </html>
