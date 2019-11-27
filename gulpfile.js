@@ -11,7 +11,7 @@ function style() {
 }
 
 function startBrowserSync() {
-  browserSync.init({
+  browserSync.init( {
     server: {
       baseDir: "./"
     },
